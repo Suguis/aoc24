@@ -1,24 +1,9 @@
 # aoc_gleam
 
-[![Package Version](https://img.shields.io/hexpm/v/aoc_gleam)](https://hex.pm/packages/aoc_gleam)
-[![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/aoc_gleam/)
+This repository contains my solutions for the [Advent of Code 2024](https://adventofcode.com) challenges, implemented in the [Gleam](https://gleam.run) programming language.
 
-```sh
-gleam add aoc_gleam@1
-```
-```gleam
-import aoc_gleam
+It uses the [gladvent](https://hexdocs.pm/gladvent) library to be easily run in a terminal.
 
-pub fn main() {
-  // TODO: An example of the project in use
-}
-```
+The inputs of the solutions are not published since it is not allowed. Citing the original AoC website, it says the following:
 
-Further documentation can be found at <https://hexdocs.pm/aoc_gleam>.
-
-## Development
-
-```sh
-gleam run   # Run the project
-gleam test  # Run the tests
-```
+> _**Can I copy/redistribute part of Advent of Code?** Please don't. Advent of Code is free to use, not free to copy. If you're posting a code repository somewhere, please don't include parts of Advent of Code like the puzzle text or your inputs. If you're making a website, please don't make it look like Advent of Code or name it something similar._
