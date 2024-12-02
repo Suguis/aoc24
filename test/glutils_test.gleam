@@ -9,3 +9,7 @@ pub fn map_pair_test() {
 pub fn apply2_pair_test() {
   glutils.apply2_pair(#(4, 2), with: int.subtract) |> should.equal(2)
 }
+
+pub fn remove_test() {
+  glutils.remove(1, [1, 2, 3]) |> should.equal(Ok([1, 3]))
+}
