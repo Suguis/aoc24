@@ -34,12 +34,9 @@ fn is_report_safe(report: Report) -> Bool {
 }
 
 fn is_report_tolerable_by_single_level(report: Report) -> Bool {
-  let assert Ok(reports_without_level) =
-    list.map(list.range(0, list.length(report) - 1), fn(i) {
-      glutils.remove(i, report)
-    })
-    |> result.all
-  list.any(reports_without_level, is_report_safe)
+  let reports_without_one_level =
+    list.combinations(report, list.length(report) - 1)
+  list.any(reports_without_one_level, is_report_safe)
 }
 
 pub fn pt_2(reports: List(Report)) -> Int {
